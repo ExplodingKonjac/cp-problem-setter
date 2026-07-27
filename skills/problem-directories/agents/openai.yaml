@@ -1,0 +1,4 @@
+interface:
+  display_name: "Problem Directories"
+  short_description: "Initialize and organize problem packages"
+  default_prompt: "Use $problem-directories to initialize or organize this problem package."

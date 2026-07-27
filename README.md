@@ -1,26 +1,58 @@
-# cp-problem-setter
+# CP Problem Setter
 
-A cross-platform plugin scaffold for competitive programming problem setters.
+CP Problem Setter is a cross-platform agent plugin for creating and reviewing
+competitive-programming problems. It provides testlib conventions, problem
+package organization, and solution-authoring workflows.
 
-The repository is both a plugin and a single-plugin marketplace. Both
-marketplace catalogs point their only entry at the repository root:
+## Included skills
+
+| Skill | Use it for |
+| --- | --- |
+| `developing-testlib` | Shared C++ testlib conventions, including options and streams |
+| `writing-testlib-generators` | Reproducible, adversarial test-data generators |
+| `writing-testlib-validators` | Strict input-format and constraint validation |
+| `writing-testlib-checkers` | Custom checkers for semantic or non-unique output |
+| `writing-testlib-interactors` | Interactive judge protocols and pipe-safe I/O |
+| `writing-solution` | Editorials or C++23 reference solutions from a problem statement and idea |
+| `problem-directories` | Initializing or safely reorganizing a problem package |
+
+Invoke a skill explicitly when needed, for example:
+
+```text
+Use $writing-testlib-validators to write a strict validator for this input format.
+```
+
+## Problem package layout
+
+`problem-directories` bundles the canonical template at
+`skills/problem-directories/assets/example-problem`. It keeps authored files in
+`src/` and treats `build/` as generated output:
+
+```text
+problem/
+├── .gitignore
+├── Makefile
+└── src/
+    ├── statement.md
+    ├── solution.md
+    ├── std.cpp
+    ├── gen.cpp
+    └── val.cpp
+```
+
+The template uses C++23. Add `checker.cpp` or `interactor.cpp` only when the
+problem needs a custom checker or interactive judge.
+
+## Plugin layout
+
+The repository is both a plugin and a single-plugin marketplace. Its manifests
+are provided for Codex, Claude-compatible clients, and agent marketplaces:
 
 ```text
 .
 ├── .agents/plugins/marketplace.json
 ├── .claude-plugin/
-│   ├── marketplace.json
-│   └── plugin.json
 ├── .codex-plugin/plugin.json
-├── examples/
 ├── skills/
 └── opencode.json
 ```
-
-`skills/` is reserved for future skills covering testlib, problem package
-management, problem-setting workflows, and solution writing. `examples/` is
-reserved for future reference problem packages. Both directories are
-intentionally empty.
-
-No scripts, third-party dependencies, MCP servers, hooks, or runtime tools are
-included in this initial scaffold.

@@ -1,0 +1,9 @@
+*
+!*/
+!*.*
+!Makefile
+
+build/
+*.in
+*.out
+*.ans
