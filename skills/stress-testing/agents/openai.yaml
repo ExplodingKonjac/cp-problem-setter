@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stress Testing"
+  short_description: "Find counterexamples with reproducible tests"
+  default_prompt: "Use $stress-testing to stress-test my candidate solution."
