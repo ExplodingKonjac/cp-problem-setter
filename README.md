@@ -6,22 +6,28 @@ workflow, from a raw idea to a release-ready package.
 
 ## Install
 
-Clone or download this repository first. The plugin includes manifests for
-Codex and Claude Code; configure OpenCode with the repository's skills path.
+Install from [ExplodingKonjac/cp-problem-setter](https://github.com/ExplodingKonjac/cp-problem-setter).
+The plugin includes manifests for Codex and Claude Code; configure OpenCode
+with the cloned repository's skills path.
 
 ### Codex
 
-In an eligible Codex workspace, open **Workspace settings → Plugins**, import
-this repository as a plugin or marketplace source, then enable **CP Problem
-Setter**. Plugin availability is controlled by workspace policy and may require
-an administrator to perform the import.
+Add the GitHub repository as a marketplace source, restart Codex, then select
+and enable **CP Problem Setter** from the plugin directory:
+
+```bash
+codex plugin marketplace add ExplodingKonjac/cp-problem-setter
+```
+
+Plugin availability is controlled by workspace policy and may require an
+administrator to perform the import.
 
 ### Claude Code
 
-Add the repository as a local marketplace, then install the plugin:
+Add the GitHub repository as a marketplace, then install the plugin:
 
 ```bash
-claude plugin marketplace add /absolute/path/to/cp-problem-setter
+claude plugin marketplace add ExplodingKonjac/cp-problem-setter
 claude plugin install cp-problem-setter@cp-problem-setter
 ```
 
@@ -30,8 +36,12 @@ new skills.
 
 ### OpenCode
 
-Add the repository's `skills` directory to the `skills` array in your OpenCode
-configuration, using an absolute path:
+Clone the repository, then add its `skills` directory to the `skills` array in
+your OpenCode configuration:
+
+```bash
+git clone https://github.com/ExplodingKonjac/cp-problem-setter.git
+```
 
 ```json
 {
