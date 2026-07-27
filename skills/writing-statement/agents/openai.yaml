@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Problem Statements"
+  short_description: "Draft, review, and rewrite problem statements"
+  default_prompt: "Use $writing-statement to draft or review this competitive-programming statement."
