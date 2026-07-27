@@ -1,4 +1,4 @@
 interface:
-  display_name: "Problem Directories"
+  display_name: "Building Problem Packages"
   short_description: "Initialize and organize problem packages"
   default_prompt: "Use $building-problem-packages to initialize or organize this problem package."

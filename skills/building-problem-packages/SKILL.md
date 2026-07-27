@@ -3,7 +3,7 @@ name: building-problem-packages
 description: Use when initializing a competitive-programming problem package or reorganizing an existing package into the repository's standard source, build, generator, validator, and documentation layout.
 ---
 
-# Problem Directories
+# Building Problem Packages
 
 Use the bundled [`assets/example-problem`](assets/example-problem) as the canonical layout. Keep authored material in `src/`; make `build/` disposable output produced by the Makefile.
 
