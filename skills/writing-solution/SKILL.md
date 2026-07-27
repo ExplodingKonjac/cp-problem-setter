@@ -27,6 +27,8 @@ Honor the requested form exactly.
 
 For a solution explanation, present the idea before its proof and make every claim traceable to the statement. For reference code, implement the validated algorithm, use types safe for constraints, and keep I/O and indexing consistent with the stated format.
 
+Use C++23 for reference solutions unless the user, problem statement, or target judge specifies a different language or language standard.
+
 ## Validation gate
 
 Before delivering, confirm:
