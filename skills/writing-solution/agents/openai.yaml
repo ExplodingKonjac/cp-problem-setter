@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Problem Solutions"
+  short_description: "Validate ideas and draft solution artifacts"
+  default_prompt: "Use $writing-solution to turn this problem statement and idea into a solution."
