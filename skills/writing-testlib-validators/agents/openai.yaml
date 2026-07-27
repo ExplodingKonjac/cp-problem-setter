@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Testlib Validators"
+  short_description: "Enforce strict testcase syntax and bounds"
+  default_prompt: "Use $writing-testlib-validators to write a strict Testlib input validator."

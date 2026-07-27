@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Testlib Interactors"
+  short_description: "Implement reliable interactive judge protocols"
+  default_prompt: "Use $writing-testlib-interactors to build a Testlib interactor."

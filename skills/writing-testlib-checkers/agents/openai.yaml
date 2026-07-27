@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Testlib Checkers"
+  short_description: "Judge semantic or non-unique submissions"
+  default_prompt: "Use $writing-testlib-checkers to implement a Testlib special judge."

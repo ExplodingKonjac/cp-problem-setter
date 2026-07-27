@@ -1,0 +1,4 @@
+interface:
+  display_name: "Developing with Testlib"
+  short_description: "Conventions for Testlib C++ tooling"
+  default_prompt: "Use $developing-testlib to build a Testlib-based tool."
