@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auditing Problem Packages"
+  short_description: "Verify problem packages before release"
+  default_prompt: "Use $auditing-problem-packages to perform a pre-release audit of this problem package."
