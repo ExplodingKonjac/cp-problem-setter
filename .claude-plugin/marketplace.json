@@ -1,0 +1,27 @@
+{
+  "name": "cp-problem-setter",
+  "owner": {
+    "name": "cp-problem-setter contributors"
+  },
+  "metadata": {
+    "description": "Competitive programming problem-setting workflows and references.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "cp-problem-setter",
+      "source": "./",
+      "description": "Competitive programming problem-setting workflows and references.",
+      "version": "0.1.0",
+      "author": {
+        "name": "cp-problem-setter contributors"
+      },
+      "keywords": [
+        "competitive-programming",
+        "problem-setting",
+        "testlib"
+      ],
+      "category": "developer-tools"
+    }
+  ]
+}

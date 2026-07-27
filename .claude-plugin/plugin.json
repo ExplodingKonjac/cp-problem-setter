@@ -1,0 +1,13 @@
+{
+  "name": "cp-problem-setter",
+  "version": "0.1.0",
+  "description": "Competitive programming problem-setting workflows and references.",
+  "author": {
+    "name": "cp-problem-setter contributors"
+  },
+  "keywords": [
+    "competitive-programming",
+    "problem-setting",
+    "testlib"
+  ]
+}

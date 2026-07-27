@@ -1,0 +1,30 @@
+{
+  "name": "cp-problem-setter",
+  "version": "0.1.0",
+  "description": "Competitive programming problem-setting workflows and references.",
+  "author": {
+    "name": "cp-problem-setter contributors"
+  },
+  "skills": "./skills/",
+  "keywords": [
+    "competitive-programming",
+    "problem-setting",
+    "testlib"
+  ],
+  "interface": {
+    "displayName": "CP Problem Setter",
+    "shortDescription": "Build and review competitive programming problems.",
+    "longDescription": "Guidance, templates, and tools for competitive programming problem setters.",
+    "developerName": "cp-problem-setter contributors",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Help me plan a competitive programming problem.",
+      "Review this problem package structure.",
+      "Help me write a testlib validator."
+    ]
+  }
+}
