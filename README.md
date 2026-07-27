@@ -14,7 +14,7 @@ package organization, and solution-authoring workflows.
 | `writing-testlib-checkers` | Custom checkers for semantic or non-unique output |
 | `writing-testlib-interactors` | Interactive judge protocols and pipe-safe I/O |
 | `writing-solution` | Editorials or C++23 reference solutions from a problem statement and idea |
-| `problem-directories` | Initializing or safely reorganizing a problem package |
+| `building-problem-packages` | Initializing or safely reorganizing a problem package |
 
 Invoke a skill explicitly when needed, for example:
 
@@ -24,8 +24,8 @@ Use $writing-testlib-validators to write a strict validator for this input forma
 
 ## Problem package layout
 
-`problem-directories` bundles the canonical template at
-`skills/problem-directories/assets/example-problem`. It keeps authored files in
+`building-problem-packages` bundles the canonical template at
+`skills/building-problem-packages/assets/example-problem`. It keeps authored files in
 `src/` and treats `build/` as generated output:
 
 ```text

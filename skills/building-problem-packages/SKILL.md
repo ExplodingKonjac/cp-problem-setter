@@ -1,5 +1,5 @@
 ---
-name: problem-directories
+name: building-problem-packages
 description: Use when initializing a competitive-programming problem package or reorganizing an existing package into the repository's standard source, build, generator, validator, and documentation layout.
 ---
 
