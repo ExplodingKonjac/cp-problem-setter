@@ -68,7 +68,8 @@ with the bundled layout use:
 | Skill | Use it for |
 | --- | --- |
 | `developing-testlib` | Shared C++ testlib conventions, options, and streams |
-| `writing-testlib-generators` | Reproducible, adversarial test-data generators |
+| `designing-test-data` | Strong, random-looking, comprehensive test-data strategies |
+| `writing-testlib-generators` | Implementing reproducible C++ testlib generators |
 | `writing-testlib-validators` | Strict input-format and constraint validation |
 | `writing-testlib-checkers` | Custom checkers for semantic or non-unique output |
 | `writing-testlib-interactors` | Interactive judge protocols and pipe-safe I/O |
@@ -89,11 +90,13 @@ Use $writing-testlib-validators to write a strict validator for this input forma
 1. Use `writing-statement` to turn an idea into a judgeable statement.
 2. Use `writing-solution` to validate the intended approach and write an
    editorial or C++23 reference solution.
-3. Use `building-problem-packages` to initialize or reorganize the package.
-4. Use the testlib skills to implement the generator, validator, and any
+3. Use `designing-test-data` to derive adversarial test families, camouflage
+   them, and define evidence that the suite kills likely wrong solutions.
+4. Use `building-problem-packages` to initialize or reorganize the package.
+5. Use the testlib skills to implement the generator, validator, and any
    required checker or interactor.
-5. Use `stress-testing` to compare candidate and reference programs.
-6. Use `auditing-problem-packages` for the final read-only release audit.
+6. Use `stress-testing` to compare candidate and reference programs.
+7. Use `auditing-problem-packages` for the final read-only release audit.
 
 ## Problem package layout
 

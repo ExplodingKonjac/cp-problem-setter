@@ -1,4 +1,4 @@
 interface:
   display_name: "Writing Testlib Generators"
-  short_description: "Build reproducible, adversarial test data"
-  default_prompt: "Use $writing-testlib-generators to design a Testlib data generator."
+  short_description: "Implement reproducible Testlib generators"
+  default_prompt: "Use $writing-testlib-generators to implement a C++ Testlib generator from this test-data design."

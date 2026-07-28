@@ -1,0 +1,4 @@
+interface:
+  display_name: "Designing Test Data"
+  short_description: "Plan strong, disguised test-data suites"
+  default_prompt: "Use $designing-test-data to design a strong, random-looking, and comprehensive test-data strategy."
