@@ -3,22 +3,4 @@
 - Time limit: [TODO]
 - Memory limit: [TODO]
 
-## Problem statement
-
-[TODO: Define the task, objects, rules, and required result.]
-
-## Input
-
-[TODO: Specify every input field, its order, and its constraints.]
-
-## Output
-
-[TODO: Specify the required output and any accepted alternatives.]
-
-## Examples
-
-[TODO: Add representative sample input and output with an explanation if useful.]
-
-## Constraints
-
-[TODO: State global and per-test-case bounds, including aggregate limits.]
+[TODO: Replace this placeholder with the statement. Convey the task, every object and allowed operation, and the exact result to determine or construct; the input contract (field order, types, ranges, separators, line layout, grouping, and how repeated structures are encoded); the output contract (exact format, meaning of each value, non-unique answers, tie-breaking, precision, and the no-solution case); every constraint with its scope and every guarantee; the judging conditions that affect acceptance (limits, interaction protocol, subtasks, scoring); and samples whose expected results are established. Organize the text however reads most clearly: this placeholder is a content checklist, not a section template.]

@@ -11,14 +11,14 @@ Treat a generator as a targeted implementation of that design, not a source of a
 
 ## Implement the planned families
 
-1. Translate each stochastic climate and supplemental family in the accepted design brief into an explicit generator mode. Preserve its latent-variable relationships and required invariants.
+1. Translate each stochastic climate and supplemental family in the settled design into an explicit generator mode. Preserve its latent-variable relationships and required invariants.
 2. Map only the planned parameters (`n`, bounds, scale, density, persistence, shape) to that mode; do not invent a new testing strategy inside the generator.
 3. Expose parameters with typed, named `opt` calls and reject absent or incompatible combinations with `ensuref`.
 4. Use testlib `rnd` exclusively after `registerGen`; never use `rand`, `<random>`, or clock-derived seeds. Preserve the invoking command and seed when a failure is found.
 5. Construct valid data directly and assert postconditions that protect the planted property after relabeling, shuffling, or jitter.
 6. Keep serialization separate from construction when the design calls for randomized presentation.
 
-The following example shows Testlib mechanics for a design whose latent process has geometric regime lengths and per-regime drift. Its parameters must come from the accepted design brief.
+The following example shows Testlib mechanics for a design whose latent process has geometric regime lengths and per-regime drift. Its parameters must come from the settled design.
 
 ```cpp
 #include "testlib.h"
@@ -55,11 +55,11 @@ int main(int argc, char* argv[]) {
 | --- | --- |
 | Reproduction | `registerGen`, testlib `rnd`, recorded command and seed |
 | Configuration | Typed, named `opt` values and `ensuref` validation |
-| Fidelity | Modes preserve the brief's distributions, dependencies, and invariants |
+| Fidelity | Modes preserve the design's distributions, dependencies, and invariants |
 | Validity | Construct the object under its invariants; do not repair random garbage |
 
 ## Avoid
 
 - Do not use one uniform distribution as the entire suite.
 - Do not hide strategy selection in source edits or unlabelled positional arguments.
-- Do not invent or silently omit distributions when the accepted design is incomplete; return to `designing-test-data`.
+- Do not invent or silently omit distributions when the settled design is incomplete; return to `designing-test-data`.

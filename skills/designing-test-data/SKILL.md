@@ -54,6 +54,6 @@ After the central random process is sound:
 - Run representative wrong solutions and stress testing as audits. Use discovered gaps to improve the stochastic model first; retain exact regression cases only when the failure is too rare or fragile to generate reliably.
 - Validate every input and compute every output with the reference solution. Cross-check small samples with an independent brute-force oracle.
 
-Write a design brief describing the stochastic model, parameter priors, semantic observables, diagnostics, tuning policy, edge-case layer, generation schedule, and validation evidence. Read [the generative test-data playbook](references/test-data-playbook.md) for deeper model patterns, domain starting points, and an end-to-end example.
+Before implementation, settle the stochastic model, parameter priors, semantic observables, diagnostics, tuning policy, edge-case layer, generation schedule, and validation evidence. Read [the generative test-data playbook](references/test-data-playbook.md) for deeper model patterns, domain starting points, and an end-to-end example.
 
-After the design is accepted, use **REQUIRED SUB-SKILL:** `writing-testlib-generators` to implement the reproducible C++ testlib generator.
+Once the model is settled, use **REQUIRED SUB-SKILL:** `writing-testlib-generators` to implement the reproducible C++ testlib generator.

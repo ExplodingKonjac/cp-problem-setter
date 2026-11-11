@@ -23,6 +23,8 @@ problem/
     └── val.cpp
 ```
 
+The file layout is required; the Markdown inside `statement.md` and `solution.md` is not. Their placeholder text lists the content a statement or editorial must carry, not a section structure to preserve—keep that content and organize the result however the problem reads best.
+
 - Write the statement and editorial in the Markdown files.
 - Write the C++23 reference solution in `std.cpp`.
 - Write the testlib generator in `gen.cpp` and strict validator in `val.cpp`.

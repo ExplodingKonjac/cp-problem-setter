@@ -27,24 +27,16 @@ Run only safe documented build and test commands. Do not invoke cleanup targets,
 
 Treat a statement/validator mismatch, generator output rejected by the validator, invalid sample, absent answer-generation path, failed command, missing required tool, or unresolved placeholder as a blocker. Treat absent stress-test evidence as a warning and recommend `stress-testing`; it does not block release by itself.
 
-## Return a release report
+## Report the release decision
 
-Return this shape, with evidence rather than assumptions:
+Report the verdict and support every finding with evidence rather than assumptions:
 
-```text
-Verdict: PASS | BLOCKED
+- the verdict: `PASS` only when no blockers remain, otherwise `BLOCKED`;
+- each blocker: the conflicting artifacts, the exact contract difference, its impact, and the next action;
+- each warning: the affected artifact or relationship, the concern, and the recommended follow-up;
+- the verified evidence: each command with its exit status and relevant observation, and each inspected relationship with its observed result.
 
-Blockers
-- [artifact(s)] defect — impact. Next action: ...
-
-Warnings
-- [artifact(s)] concern — recommended follow-up.
-
-Verified evidence
-- command or inspected relationship — observed result.
-```
-
-Use `PASS` only when no blockers remain. Cite the conflicting artifacts and the exact contract difference in every finding. Recommend the relevant skill (`writing-statement`, `writing-solution`, testlib guides, `stress-testing`, or `building-problem-packages`) without changing files.
+Organize the findings however is clearest for the package. Recommend the relevant skill (`writing-statement`, `writing-solution`, testlib guides, `stress-testing`, or `building-problem-packages`) without changing files.
 
 ## Avoid
 
