@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2.0 — 2026-11-11
+
+- Reworks `writing-statement` and `writing-solution` to specify required
+  content instead of fixed section layouts, leaving organization to the
+  author.
+- Replaces the fixed audit report skeleton with the content a release
+  report must carry.
+- Updates the example package templates and `building-problem-packages`
+  guidance so the file layout stays canonical while statements and
+  editorials are organized freely.
+- Removes the required design brief from `designing-test-data`; the design
+  is settled directly before generator implementation.
+
 ## 1.1.0 — 2026-07-28
 
 - Adds the `designing-test-data` skill for creating strong, natural stochastic
