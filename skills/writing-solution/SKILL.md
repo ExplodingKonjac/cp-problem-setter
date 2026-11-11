@@ -36,6 +36,15 @@ Use C++23 for reference solutions unless the user, problem statement, or target 
 
 This list is a content checklist, not an outline. Present the argument in whatever order makes it easiest to follow; proof may be interleaved with the algorithm description, and headings are optional.
 
+## Coding style
+
+Write reference code the way a contestant would, not the way a library would. These requirements apply to every reference implementation and take precedence over general software-engineering preferences.
+
+- **No input validation.** Treat the stated input contract as guaranteed. Do not check ranges, assert preconditions, reject or sanitize malformed input, or add any other error handling; validating input is the validator's responsibility, not the solution's. Read the promised format directly and compute the answer.
+- **Competitive-programming style first.** Prefer contest idioms: global arrays and buffers sized to the maximum bound, short conventional names such as `n`, `m`, `i`, `fa`, and `dis`, plain loops, and direct I/O. Avoid object orientation, generic abstractions, and defensive engineering unless they make the code shorter and clearer.
+- **Choose the simplest implementation.** Take the most direct correct route within the limits. Do not generalize the solution, optimize prematurely, add configurability or alternative paths, or handle cases the statement excludes. Any complexity in the code must come from the required algorithm, never from the implementation.
+- **Keep the code clean, formatted, and short.** Run the project formatter (clang-format for C++) instead of formatting by hand, and keep the implementation as short as readability allows. Short code is easier to review and verify, so remove dead code, unused state, and redundant comments; comment only steps whose purpose is not evident.
+
 ## Validation gate
 
 Before delivering, confirm:
@@ -44,9 +53,11 @@ Before delivering, confirm:
 - The argument covers both feasibility and optimality/counting requirements.
 - The complexity fits the largest input, not only samples.
 - The code, if any, matches the described algorithm and output contract.
+- The code, if any, follows the coding style above: it validates nothing, uses contest idioms, takes the simplest correct approach, and is formatter-clean and concise.
 
 ## Avoid
 
 - Do not infer unstated constraints or silently choose between incompatible interpretations.
 - Do not turn a vague intuition into a proof by assertion.
 - Do not provide both an editorial and code when the user requested only one, unless they ask for both.
+- Do not add input validation, defensive error handling, or engineering boilerplate to a reference solution.
