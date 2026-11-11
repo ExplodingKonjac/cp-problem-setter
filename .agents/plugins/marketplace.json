@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "cp-problem-setter",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "source": {
         "source": "local",
         "path": "./"

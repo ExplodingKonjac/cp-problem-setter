@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.1 — 2026-11-11
+
+- Adds coding-style requirements to `writing-solution`: reference code must not
+  validate input, should follow competitive-programming idioms, use the
+  simplest correct implementation, and stay formatter-clean and concise.
+- Adds writing-style requirements to `writing-statement`: clean, natural prose;
+  affirmative rules instead of negative patches; and notation for complex
+  definitions and procedures.
+- Consolidates `writing-statement` into four sections.
+
 ## 1.2.0 — 2026-11-11
 
 - Reworks `writing-statement` and `writing-solution` to specify required
